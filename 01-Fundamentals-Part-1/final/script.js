@@ -466,3 +466,48 @@ const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 */
+
+/* Write your code below. Good luck! 🙂 */
+/*
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
+
+console.log(scoreDolphins);
+console.log(scoreKoalas);
+
+if ((scoreDolphins > scoreKoalas, scoreDolphins <= 100, scoreKoalas <= 100)) {
+  console.log("Dolphins win the trophy");
+} else if (
+  (scoreDolphins < scoreKoalas, scoreDolphins <= 100, scoreKoalas <= 100)
+) {
+  console.log("Koalas win the trophy");
+} else if (
+  (scoreDolphins === scoreKoalas, scoreDolphins >= 100, scoreKoalas >= 100)
+) {
+  console.log("Both win the trophy");
+}
+
+if day === 'monday' {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if day === 'tuesday' {
+  console.log('Prepare theory videos');
+} else if day === 'wednesday' || day === 'thursday' {
+  console.log('Write code examples');
+} else if day === 'friday' {
+  console.log('Record videos');
+} else if day === 'saturday' || day === 'sunday' {
+  console.log('Enjoy the weekend :D');
+} else {
+  console.log('Not a valid day!');
+}
+*/
+const bill = 430;
+
+let tip = bill >= 50 && bill <= 300 ? 0.15 : 0.2;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip * bill}, and total value ${
+    bill + tip * bill
+  }`
+);
