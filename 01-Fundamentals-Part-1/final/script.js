@@ -502,12 +502,42 @@ if day === 'monday' {
   console.log('Not a valid day!');
 }
 */
-const bill = 430;
+// const bill = 430;
 
-let tip = bill >= 50 && bill <= 300 ? 0.15 : 0.2;
+// let tip = bill >= 50 && bill <= 300 ? 0.15 : 0.2;
 
-console.log(
-  `The bill was ${bill}, the tip was ${tip * bill}, and total value ${
-    bill + tip * bill
-  }`
-);
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip * bill}, and total value ${
+//     bill + tip * bill
+//   }`
+// );
+/* Write your code below. Good luck! 🙂 */
+
+/* Write your code below. Good luck! 🙂 */
+
+// const scoreDolphins = [44, 23, 71];
+// const scoreKoalas = [65, 54, 49];
+
+// const calcAverage = (first, second, third) => {
+//     const average = (first + second + third) / 3;
+//     return average;
+// };
+
+// const avgDolphins = calcAverage(
+//   scoreDolphins[0],
+//   scoreDolphins[1],
+//   scoreDolphins[2]
+// );
+// const avgKoalas = calcAverage(scoreKoalas[0], scoreKoalas[1], scoreKoalas[2]);
+
+// const checkWinner = function (avgDolphins,avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+//     } else if (avgKoalas >= 2* avgDolphins) {
+//         console.log(`Koalas win (${avgDolphins} vs ${avgKoalas})`);
+//     } else {
+//         console.log(`No team wins...`);
+//     }
+// };
+
+// checkWinner(scoreDolphins,scoreKoalas)
