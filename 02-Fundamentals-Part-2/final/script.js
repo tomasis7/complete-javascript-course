@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 ///////////////////////////////////////
@@ -587,3 +587,86 @@ console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 */
+
+// function maskEmail(email) {
+//   const [firstPart] = email.split("@");
+//   const lastChar = firstPart.charAt(firstPart.length - 1);
+//   const firstChar = email.charAt(0);
+//   const atIndex = email.indexOf("@");
+//   const masked = "*".repeat(atIndex - 1);
+//   const domain = email.slice(atIndex);
+//   const maskedEmail = firstChar + masked + lastChar + domain;
+//   return maskedEmail;
+// }
+
+/*
+function maskEmail(email) {
+  const [username, domain] = email.split("@");
+  const firstChar = username[0];
+  const lastChar = username[username.length - 1];
+  const maskedMiddle = "*".repeat(username.length - 2);
+
+  return `${firstChar}${maskedMiddle}${lastChar}@${domain}`;
+}
+const email = "example@example.com";
+maskEmail(email);
+console.log(maskEmail("apple.pie@example.com"));
+console.log(maskEmail("freecodecamp@example.com"));
+*/
+
+/*
+function isLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return `${year} is a leap year.`;
+  } else {
+    return `${year} is not a leap year.`;
+  }
+}
+
+const year = 2024;
+const result = isLeapYear(year);
+console.log(result);
+*/
+const lunches = [];
+function addLunchToEnd(lunches) {
+  return lunches + " added to the end of the lunch menu.";
+}
+function addLunchToStart(lunches) {
+  return lunches + " added to the start of the lunch menu.";
+}
+function removeLastLunch(lunches) {
+  if (lunches && lunches.length > 0) {
+    const removedLunch = lunches.pop();
+    return removedLunch + " removed from the end of the lunch menu.";
+  } else {
+    return "No lunches to remove.";
+  }
+}
+function removeFirstLunch(lunches) {
+  if (lunches) {
+    return lunches + " removed from the start of the lunch menu.";
+  } else {
+    return "No lunches to remove.";
+  }
+}
+function getRandomLunch(lunches) {
+  if (lunches) {
+    return "Randomly selected lunch: " + lunches;
+  } else {
+    return "No lunches available.";
+  }
+}
+function showLunchMenu(lunches) {
+  if (lunches) {
+    return "Menu items: " + lunches;
+  } else {
+    return "The menu is empty.";
+  }
+}
+console.log(addLunchToEnd("Tacos"));
+console.log(addLunchToStart("Sushi"));
+console.log(removeLastLunch(["Stew", "Soup", "Toast"]));
+console.log(removeFirstLunch("Salad", "Eggs", "Cheese"));
+console.log(getRandomLunch("Fish", "Fries", "Roast"));
+console.log(showLunchMenu());
+console.log(showLunchMenu(["Greens", "Corns", "Beans"]));
